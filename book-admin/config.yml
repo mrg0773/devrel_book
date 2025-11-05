@@ -1,9 +1,11 @@
 # Конфигурация Decap CMS для книги "База Деврела"
 # https://decapcms.org/docs/configuration-options/
 
-# Backend (GitHub) - test mode для публичных репозиториев
+# Backend (GitHub)
 backend:
-  name: test-repo
+  name: github
+  repo: mrg0773/devrel_book  # Публичный репозиторий книги
+  branch: main  # Главная ветка
 
 # Опциональный режим редактирования локально (для разработки)
 # Раскомментируйте для локального тестирования:

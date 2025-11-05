@@ -1,0 +1,9 @@
+[build]
+  publish = "book-admin"
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
