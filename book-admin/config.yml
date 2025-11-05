@@ -1,12 +1,9 @@
 # Конфигурация Decap CMS для книги "База Деврела"
 # https://decapcms.org/docs/configuration-options/
 
-# Backend (GitHub) через Netlify OAuth прокси
+# Backend (GitHub) - test mode для публичных репозиториев
 backend:
-  name: github
-  repo: mrg0773/devrel_book  # Публичный репозиторий книги
-  branch: main  # Главная ветка
-  base_url: https://api.netlify.com  # OAuth прокси (бесплатный)
+  name: test-repo
 
 # Опциональный режим редактирования локально (для разработки)
 # Раскомментируйте для локального тестирования:
