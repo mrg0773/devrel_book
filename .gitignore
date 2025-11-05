@@ -1,0 +1,32 @@
+# Quarto
+/.quarto/
+/_site/
+_temp_build/
+_temp_chapter_files/
+*.log
+
+# LaTeX
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Временные файлы
+*.tmp
+*.bak
+*~
+
+# Версии (оставляем только в _output и _versions)
+# но не коммитим старые версии
+_versions/*/*.pdf
+

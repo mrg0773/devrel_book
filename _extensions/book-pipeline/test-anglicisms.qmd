@@ -1,0 +1,53 @@
+---
+title: "Тест фильтра англицизмов"
+format: html
+filters:
+  - anglicisms.lua
+---
+
+# Глава 1: DevRel manager
+
+DevRel manager проводит meeting каждую неделю с командой.
+
+## Процесс разработки
+
+Мы используем Docker и Kubernetes для deployment проекта.
+GitHub используется для code review и merge запросов.
+
+Каждый developer должен делать commit в свой branch перед созданием pull request.
+
+## Работа с community
+
+Community manager организует meetup и workshop для пользователей API.
+На conference мы делаем presentation наших features.
+
+## Технические термины (должны быть в whitelist)
+
+- Docker
+- Kubernetes
+- API
+- GitHub
+- JavaScript
+- React
+- HTML
+- CSS
+- PDF
+
+## Обычные слова (должны найтись)
+
+Project manager устанавливает deadline для task.
+Team делает feedback после каждого sprint.
+Leader проводит status update meeting.
+
+---
+
+**Ожидаемые результаты:**
+
+Найти:
+- manager, meeting, deployment, code, review, merge, developer, commit, branch, pull, request
+- meetup, workshop, conference, presentation, features
+- project, deadline, task, team, feedback, sprint, leader, status, update
+
+Whitelist (не должны попасть в отчет):
+- Docker, Kubernetes, API, GitHub, JavaScript, React, HTML, CSS, PDF, DevRel
+

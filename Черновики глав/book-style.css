@@ -1,0 +1,244 @@
+/* Стиль для книги "База DevRel" */
+
+@page {
+    margin: 2cm 2.5cm;
+    size: A4;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    page-break-before: always;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #7f8c8d;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #95a5a6;
+}
+
+/* Параграфы */
+p {
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+/* Списки */
+ul, ol {
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Цитаты и врезки */
+blockquote {
+    background: #f9f9f9;
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Код */
+code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+}
+
+pre {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-size: 9pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* Таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 10pt;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Специальные блоки */
+.key-principle, .warning, .important {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.key-principle {
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+}
+
+.warning {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.important {
+    background: #ffebee;
+    border-left: 4px solid #f44336;
+}
+
+/* Чек-листы */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Разрывы страниц */
+.page-break {
+    page-break-after: always;
+}
+
+/* Титульная страница */
+.title-page {
+    text-align: center;
+    margin-top: 200px;
+    page-break-after: always;
+}
+
+.title-page h1 {
+    font-size: 32pt;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.title-page p {
+    font-size: 14pt;
+    color: #7f8c8d;
+}
+
+/* Содержание */
+#TOC {
+    page-break-after: always;
+    margin-top: 40px;
+}
+
+#TOC ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#TOC li {
+    margin-bottom: 8px;
+}
+
+#TOC a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+#TOC a:hover {
+    color: #3498db;
+}
+
+/* Футер */
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 9pt;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+/* Печать */
+@media print {
+    body {
+        font-size: 10pt;
+    }
+    
+    h1 {
+        font-size: 20pt;
+    }
+    
+    h2 {
+        font-size: 16pt;
+    }
+    
+    h3 {
+        font-size: 13pt;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .no-print {
+        display: none;
+    }
+}
+
+
+

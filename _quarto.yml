@@ -1,0 +1,280 @@
+project:
+  type: book
+  output-dir: _output
+  pre-render:
+    - python3 sync_glossary.py
+    - python3 apply_terms_prerender.py
+  post-render:
+    - python3 cleanup_temp.py
+  
+# Версия книги
+version: "1.0.49"
+
+book:
+  title: "База DevRel"
+  subtitle: "Практическое руководство по Developer Relations и бренду работодателя"
+  author: 
+    - "Рафаэль Миниахметов"
+    - "Ксения Романова"
+  date: today
+  
+  chapters:
+    - index.qmd
+    - "_temp_build/Введение.md"
+    
+    # Глава 1 (3 части)
+    - "_temp_build/Глава_01_1_Что_такое_DevRel.md"
+    - "_temp_build/Глава_01_2_Что_такое_DevRel.md"
+    - "_temp_build/Глава_01_3_Что_такое_DevRel.md"
+    
+    # Глава 2 (2 части)
+    - "_temp_build/Глава_02_1_Компетенции_DevRel.md"
+    - "_temp_build/Глава_02_2_Компетенции_DevRel.md"
+    
+    # Глава 3 (5 частей)
+    - "_temp_build/Глава_03_1_Карьерный_путь_DevRel.md"
+    - "_temp_build/Глава_03_2_Карьерный_путь_DevRel.md"
+    - "_temp_build/Глава_03_3_Карьерный_путь_DevRel.md"
+    - "_temp_build/Глава_03_4_Карьерный_путь_DevRel.md"
+    - "_temp_build/Глава_03_5_Карьерный_путь_DevRel.md"
+    
+    # Глава 4 (2 части)
+    - "_temp_build/Глава_04_1_Что_такое_Employer_Brand.md"
+    - "_temp_build/Глава_04_2_Что_такое_Employer_Brand.md"
+    
+    # Глава 5 (3 части)
+    - "_temp_build/Глава_05_1_Построение_бренда_работодателя.md"
+    - "_temp_build/Глава_05_2_Построение_бренда_работодателя.md"
+    - "_temp_build/Глава_05_3_Построение_бренда_работодателя.md"
+    
+    # Глава 6 (2 части)
+    - "_temp_build/Глава_06_1_Каналы_продвижения.md"
+    - "_temp_build/Глава_06_2_Каналы_продвижения.md"
+    
+    # Глава 7 (5 частей)
+    - "_temp_build/Глава_07_1_Построение_сообщества.md"
+    - "_temp_build/Глава_07_2_Построение_сообщества.md"
+    - "_temp_build/Глава_07_3_Построение_сообщества.md"
+    - "_temp_build/Глава_07_4_Построение_сообщества.md"
+    - "_temp_build/Глава_07_5_Построение_сообщества.md"
+    
+    # Глава 8 (3 части)
+    - "_temp_build/Глава_08_1_Контент_для_разработчиков.md"
+    - "_temp_build/Глава_08_2_Контент_для_разработчиков.md"
+    - "_temp_build/Глава_08_3_Контент_для_разработчиков.md"
+    
+    # Глава 9 (2 части)
+    - "_temp_build/Глава_09_1_Адвокация_разработчиков.md"
+    - "_temp_build/Глава_09_2_Адвокация_разработчиков.md"
+    
+    # Глава 10 (не разбита)
+    - "_temp_build/Глава_10_Типы_мероприятий.md"
+    
+    # Глава 11 (3 части)
+    - "_temp_build/Глава_11_1_Организация_митапов.md"
+    - "_temp_build/Глава_11_2_Организация_митапов.md"
+    - "_temp_build/Глава_11_3_Организация_митапов.md"
+    
+    # Глава 12 (5 частей)
+    - "_temp_build/Глава_12_1_Геймификация_и_активации.md"
+    - "_temp_build/Глава_12_2_Геймификация_и_активации.md"
+    - "_temp_build/Глава_12_3_Геймификация_и_активации.md"
+    - "_temp_build/Глава_12_4_Геймификация_и_активации.md"
+    - "_temp_build/Глава_12_5_Геймификация_и_активации.md"
+    
+    # Глава 13 (3 части)
+    - "_temp_build/Глава_13_1_Инструменты_DevRel.md"
+    - "_temp_build/Глава_13_2_Инструменты_DevRel.md"
+    - "_temp_build/Глава_13_3_Инструменты_DevRel.md"
+    
+    # Глава 14 (2 части)
+    - "_temp_build/Глава_14_1_AI_инструменты.md"
+    - "_temp_build/Глава_14_2_AI_инструменты.md"
+    
+    # Глава 15 (5 частей)
+    - "_temp_build/Глава_15_1_Метрики_эффективности.md"
+    - "_temp_build/Глава_15_2_Метрики_эффективности.md"
+    - "_temp_build/Глава_15_3_Метрики_эффективности.md"
+    - "_temp_build/Глава_15_4_Метрики_эффективности.md"
+    - "_temp_build/Глава_15_5_Метрики_эффективности.md"
+    
+    # Глава 16 (2 части)
+    - "_temp_build/Глава_16_1_Кейсы_российских_компаний.md"
+    - "_temp_build/Глава_16_2_Кейсы_российских_компаний.md"
+    
+    # Глава 17 (2 части)
+    - "_temp_build/Глава_17_1_Международный_опыт.md"
+    - "_temp_build/Глава_17_2_Международный_опыт.md"
+    
+    # Глава 18 (не разбита)
+    - "_temp_build/Глава_18_Частые_ошибки.md"
+    
+    - "_temp_build/Заключение.md"
+    - "_temp_build/Приложение_А_Ресурсы.md"
+    - "_temp_build/Приложение_Б_Шаблоны.md"
+    - "_temp_build/Приложение_В_Глоссарий.md"
+    - "_temp_build/Приложение_Г_QA.md"
+  
+  sidebar:
+    style: "docked"
+    search: true
+    
+  page-footer:
+    left: "© 2025 Рафаэль Миниахметов"
+    right: "База DevRel"
+
+format:
+  html:
+    theme: 
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    toc-expand: 2
+    number-sections: true
+    number-depth: 3
+    code-fold: true
+    code-tools: false
+    code-copy: true
+    link-external-newwindow: true
+    
+  pdf:
+    output-file: "База_DevRel_v1.0.5.pdf"
+    documentclass: scrbook
+    classoption: 
+      - oneside
+      - open=any
+      - parskip=false
+      - numbers=noenddot
+    papersize: a4
+    fontsize: 11pt
+    mainfont: "PT Serif"
+    sansfont: "Fira Sans"
+    monofont: "Fira Code"
+    linestretch: 1.5
+    indent: true
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    number-depth: 4
+    colorlinks: true
+    keep-tex: true
+    include-in-header:
+      - text: |
+          % Пакеты для оформления
+          \usepackage{lettrine}
+          \usepackage{setspace}
+          \usepackage{indentfirst}
+          \usepackage{scrlayer-scrpage}
+          \usepackage{mdframed}
+          \usepackage{xcolor}
+          
+          % Правильное отображение длинного тире
+          \renewcommand{\textemdash}{---}
+          
+          % Пакеты для таблиц
+          \usepackage{longtable}
+          \usepackage{booktabs}
+          \usepackage{array}
+          \usepackage{float}
+          \usepackage{tocloft}
+          
+          % Настройки для длинных таблиц
+          \setlength\LTleft{0pt}
+          \setlength\LTright{0pt}
+          \setlength\LTpre{1em}
+          \setlength\LTpost{1em}
+          
+          % Устанавливаем полуторный интервал ЗДЕСЬ
+          \onehalfspacing
+          
+          % Стиль для историй
+          \mdfdefinestyle{storystyle}{
+            linecolor=gray!40,
+            linewidth=1.5pt,
+            leftmargin=0.5cm,
+            rightmargin=0.5cm,
+            innerleftmargin=0.8cm,
+            innerrightmargin=0.8cm,
+            innertopmargin=0.5cm,
+            innerbottommargin=0.5cm,
+            backgroundcolor=gray!5,
+            roundcorner=5pt,
+            skipabove=1em,
+            skipbelow=1em
+          }
+          \newenvironment{story}{\begin{mdframed}[style=storystyle]}{\end{mdframed}}
+    include-before-body:
+      - text: |
+          % Переопределяем отступы после всех настроек Quarto
+          \setlength{\parindent}{1.25cm}
+          
+          % Защита от висячих строк
+          \widowpenalty=10000
+          \clubpenalty=10000
+          
+          % KOMA-Script стили заголовков
+          \setkomafont{chapter}{\normalfont\huge\bfseries\sffamily}
+          \setkomafont{section}{\normalfont\Large\bfseries\sffamily}
+          \setkomafont{subsection}{\normalfont\large\bfseries}
+          
+          % Колонтитулы
+          \clearpairofpagestyles
+          % Убираем "Содержание" из колонтитула полностью
+          \renewcommand{\chaptermark}[1]{%
+            \markboth{%
+              \ifnum\value{chapter}>0 #1\fi%
+            }{}%
+          }
+          \renewcommand{\sectionmark}[1]{\markright{#1}}
+          % Показываем только название главы (не Содержание)
+          \ihead{\leftmark}
+          \ohead{\pagemark}
+          \addtokomafont{pageheadfoot}{\small\itshape}
+          % Настройки для оглавления
+          \setlength{\cftbeforechapskip}{1em}
+          \renewcommand{\cftchapfont}{\normalfont\bfseries}
+          \renewcommand{\cftsecfont}{\normalfont}
+          \renewcommand{\cftsubsecfont}{\normalfont\small}
+          % Увеличенные отступы для цифр (14.10 не наезжает)
+          \setlength{\cftsecnumwidth}{3em}
+          \setlength{\cftsubsecnumwidth}{4em}
+          
+          % Дополнительная защита от разрывов таблиц
+          \floatplacement{table}{H}
+
+# Filters (порядок важен!)
+filters:
+  - replace-terms.lua               # 1. СНАЧАЛА заменяем термины <TERM:...>>
+  - replace-placeholders.lua        # 2. Заменяем плейсхолдеры историй/аналогий
+  # - _extensions/book-pipeline/anglicisms.lua    # 3. ВРЕМЕННО ОТКЛЮЧЕНО
+  # - _extensions/book-pipeline/check-terminology.lua  # 4. ВРЕМЕННО ОТКЛЮЧЕНО
+  # - _extensions/book-pipeline/check-cross-references.lua  # 5. ВРЕМЕННО ОТКЛЮЧЕНО
+  # - _extensions/book-pipeline/glossary.lua      # 6. ВРЕМЕННО ОТКЛЮЧЕНО
+  - fix-dashes.lua                  # 7. Правильная конвертация длинного тире
+  - fix-emoji.lua                   # 8. Чистим emoji для PDF
+  # add-dropcaps.lua - отключено (конфликт с Unicode)
+
+# Language
+lang: ru
+language:
+  title-block-author-single: "Автор"
+  title-block-published: "Опубликовано"
+
+# Отключаем интерпретацию {{...}} как attributes (чтобы работали плейсхолдеры)
+from: markdown-bracketed_spans-fenced_divs-inline_code_attributes
+
+# Cross-references
+crossref:
+  chapters: true
+  fig-title: "Рисунок"
+  tbl-title: "Таблица"
+  title-delim: "."
+
+# Code execution
+execute:
+  freeze: auto
+  echo: true
+  warning: false
+  error: false
+
