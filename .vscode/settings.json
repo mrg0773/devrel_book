@@ -1,0 +1,22 @@
+{
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "markdown.links.openLocation": "currentGroup",
+  "workbench.editorAssociations": {
+    "*.md": "default"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/_backups": true,
+    "**/_archive_before_split": true,
+    "**/_temp_build": true,
+    "**/.quarto": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/_temp_build": true
+  }
+}
+
